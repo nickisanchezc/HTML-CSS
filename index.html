@@ -1,76 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="viewport">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-    <title>ISEKAI NICKI</title>
-<style>
-h1 {
-    width: 280px;
-    height: 50px;
-    background-color:hsl(0, 100%, 84%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: #D97E7E;
-    text-align: center;
-    padding: 20px;
-    outline-width: 30px;
-    outline-style: solid;
-    outline-color: hsl(0, 70%, 77%);
-    margin: 50px;
+    <title>Projeto Hotelaria</title>
+    <link rel =" preconnect " href =" https://fonts.googleapis.com"/>
+    <link rel =" preconnect " href =" https://fonts.gstatic.com " crossorigin/>
+    <link href =" https://fonts.googleapis.com/css2?family=Roboto&display=swap " rel ="folha de estilo"/>
+    
+    
+    <style>
+    
+        
+    
+    * {
+font-family: "Roboto", sans-serif;
+padding: 0;
+margin: 0;
+}
 
+header {
+    min-height: 600px;
+    color: antiquewhite;
+    background: url(praia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 100px;
 }
 
 
 
+button {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.25s ease-out;
 
-</style>
+}
+  
+button:hover{background-color: rgba(255, 255, 255, 0.2)
+}
+
+.button-spacing {
+    margin-top: 40px;
+}
+
+.city {
+    display: flex;
+    width: 100%;
+}
+.item-flex-50 {
+    flex-basis: 50%;
+}
+.city-image {
+    width: 100%;
+    object-fit: cover;
+
+}
+.city-content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.city-text {
+    padding: 40px 0;
+
+}
+
+.button-primary {
+    border: 2px solid #00a7ef;
+    color: #00a7ef;
+}
+
+.button-primary:hover {
+    background-color: rgba(0, 157, 237, 0.2);}
+
+    .service {
+        margin-top: 40px 0;
+    
+    }
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+
+}
+
+.service-content {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.service-card {
+    background-color: #00a7ef;
+}
+
+.service-text { color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+
+service-image {
+    width: 100%;
+
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-title {
+    margin-bottom: 30px;
+}
+footer {
+background-color: #c4c4c4;
+text-align: center;
+padding: 40px;
+}
 
 
+
+    </style>
 
 </head>
-<body style="background-color: #ffc095;">
-   <section>
-    <h1>MEU PRIMEIRO SITE</h1>
-    <br>
-    <br>
+<body>
+ <header> 
+    <h1>Hotel Le Blanc</h1>
+    <p>O seu paraiso na terra</p>
+<a href="https://www.instagram.com/nickisanchezc/"> <button class="button-spacing button" >Reserve Aqui</button> </a>
+  </header>
 
 
-    <h2>instagram 📸</h2>
-<p>você pode acessar meu instagram pelo link  <a href="https://www.instagram.com/nickisanchezc/">MEU PERFIL</a></p>   
-
-<h2>Twitter 🐦</h2>
-<p> você pode acessar meu twitter pelo link <a href="https://twitter.com/nickisanchezc">  MEU PERFIL </a></p>
-</section> 
 
 
-<section>
-    <h1">SOBRE MIM:</h1>
-    <pre><p>Meu nome é <mark style="background-color: #9c4810;"><b>Nicoli Sánchez Ceccon</b></mark>, nasci em 01/01/1997 em Porto alegre/RS.
-        <br>Tenho 26 anos, atualmente fazendo curso na área de desenvolvimento web, pretendendo ser uma fullStack Developer.
-        </p></pre>
-    <img src="IMG_0222.jpg" alt="Nicoli 💖"></section>
-    
-    <article > <ul> <h3>Tenho um gato chamado <u>Nicoláz</u> mas ele tem <strong>outros apelidos</strong>, como:</h3>                         
-            <li>Jozéph do Picadinho</li>
-            <li>Zé do Picadinho</li>
-            <li>Lindo</li>
-            <li>Marginal</li></ul>
-        </article>
-        <img src="nicolaz.JPG" alt="NICOLÁZ, O Gato">
+  
+  <section class="city">
+<div class="item-flex-50">
+    <img class="city-image" src="imagem-cidade.jpg" alt="imagem-cidade">
+</div>
 
-        <h2>GOSSIP </h2>
-        <P>este é o <a href="gossip/index.html">link </a>para a pagina GOSSIP</P>
-       
-       
-       <h3>Quer dar uma olhada no meu curriculo?</h3>
-        <p> Você pode ver meu curriculo clicando <a href="WhatsApp Image 2023-04-10 at 13.01.32.jpeg"> AQUI 💌 </p>
+<div class="item-flex-50">
+    <div class="city-content"> <h3><strong>Praia do Santinho, SC, Brasil</strong></h3>
+        <p class="city-text"> Imagine um santuário privado com mar de águas mornas, natureza preservada
+            paz e tranquilidade onde cada detalhe de sua hospedagem foram carinhosamente delineada
+            para que possa desfrutar tudo do bom e do melhor.  
+        </p> </p>
+        <button class="button button-primary">Reserve Aqui</button>   </div>
+        
+        
+    </div>
+    </div>
+</section>
+
+<section class="services container">
+<h3>Serviços</h3>
+<div class="service-content">
+    <div class="service-card">
+
+<img src="imagem-carro.jpg" alt="imagem-carro">
+<div class="service-text"> Transportes gratuitos</div>
+    </div>
+
+        <div class="service-card">
+        <img src="imagem-quarto.jpg" alt="imagem-quarto">
+        <div class="service-text"> Quartos luxuosos</div>
+        </div>
+
+
+        <div class="service-card">
+        <img src="imagem-vista.jpg" alt="imagem-vista">
+        <div class="service-text"> Vista para o mar</div>
+            </div>
+</div>
+</section>
+
+<section class="contact">
+    <div class="item-flex-50">
+        <div class="city-content">
+        <h2>Alguma dúvida?</h2>
+        <h2 class="contact-title">Entre em contato</h2>
+        <p>Telefone: +55 (48) 99767-8110</p>
+        <p>email: leblacksantinho@hotmail.com</p>
+        </div>
+    </div>
+<div class="item-flex-50">
+    <div><img class="city-image"  src="imagem-duvida.jpg" alt=""></div>
+</div>
+  
+</section>
+
+<footer>
+    <p><strong>Hotel Le Blanc - Todos os direitos reservados</strong></p>
+    <p><strong>Endereço:Praia do - Estr. Ver. Onildo Lemos, 2505 - Santinho, Florianópolis - SC, 88058-700</strong>/p>
+</footer>
+
 
 </body>
 </html>
