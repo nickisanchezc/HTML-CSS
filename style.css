@@ -1,55 +1,139 @@
 
-body {background-color: #141414;
-font-family: 'Roboto', sans-serif;
+* {
+    background-color: #050303;
+    color: #f4f4f4;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 h1 {
-color: whitesmoke;
-font-size: 60px;
-font-weight: normal;
+    font-size: 80px;
+    margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h2 {color: #da1197;}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #f44cfa;
 }
 
-.container-profile {
-display: flex;
-gap: 40px;
+h4 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #cf45a1;
+    margin: 0;
 }
 
-.profile {
-display: flex;
-flex-direction: column;
-color: #A2A1A1;
-text-align: center;
-cursor: pointer;
-justify-content: space-between;
+h5 {font-weight: 400;
+    font-size: 25px;
+    margin: 0;
 }
+
 
 button {
-background-color: transparent;
-color: #A2A1A1;
-border: 1px solid #A2A1A1;
-padding: 10px 40px;
-letter-spacing: 2px;
-cursor: pointer;
-transition: all 0.5s linear;
-border-radius: 2px;
+ padding: 15px 40px;
+ cursor: pointer;
+ background: transparent;
+ color: #da1197;
+ border: 2px solid #da1197;
+ border-radius: 5px; 
+ transition: 0.08s;  
 }
 
 button:hover {
-background-color: #020202;
+    background-color: #33252e;
 }
 
-.button-container {
-margin-top: 20px;
+.subtitle {max-width: 550px;}
+
+.primary-color {
+    color: #a1076e;
 }
 
-.add-icon {
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {flex-direction: column;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.spacing {
+margin-top: 140px;
+}
+
+.about-container {
 display: flex;
-justify-content: center;
-flex: 1;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+}
+
+.about-picture {
+    max-height: 300px;
+}
+
+span {color: #ee8bcd;}
+
+.tec-container { display: flex;
+    justify-content: space-between;
+
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 400px;
+    background-color: #2e1a27;
+padding: 46px;
+gap: 45px;
+}
+
+.card.title {
+    padding: 0;
+    margin: 0;
+}
+
+.card-text {
+    margin: 30px 0;
+}
+
+.card-button {
+    width: 100%;
+}
+
+.contact {text-align: center;}
+
+.contact-text {color: #33252e;}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.about-container {flex-direction: column-reverse;
+gap: 20px;}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
